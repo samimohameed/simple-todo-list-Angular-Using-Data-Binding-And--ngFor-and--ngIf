@@ -16,6 +16,10 @@ newTask: string = '';
 
 
 addTask(){
+  if(!this.newTask.trim()){
+    return;
+  }
+  
   this.tasks.push(this.newTask);
   this.newTask = '';
 }
